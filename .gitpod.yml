@@ -1,15 +1,11 @@
 tasks:
   - name: Package
-    init: yarn install
+    init: yarn install && yarn link
     command: yarn watch
 
   - name: Web App
-    init: cd example && yarn install
-    command: cd example && yarn build
-
-  - name: Install usefull packages
-    init: |
-      npm i -g serve
+    init: cd example && yarn link react-slid
+    command: cd example && yarn start
 
 ports:
   - name: Web App

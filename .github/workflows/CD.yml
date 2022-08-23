@@ -39,11 +39,11 @@ jobs:
 
       - name: Installing Packages 📝
         run: |
+          yarn install
           cd example
 
-          yarn remove react-component-library-ts
-          yarn install
-          yarn add react-component-library-ts@latest
+          yarn remove react-slid
+          yarn add react-slid@latest
 
       - name: Building App 📦
         run: cd example && yarn build
@@ -59,10 +59,10 @@ jobs:
         run: |
           cd example
 
-          # Build .vercel configuration
-          mkdir build/.vercel
-          touch build/.vercel/project.json
-          echo '{ "orgId": "${{ secrets.VERCEL_ORG_ID }}", "projectId": "${{ secrets.VERCEL_PROJECT_ID }}" }' > build/.vercel/project.json
+          # # Build .vercel configuration
+          # mkdir build/.vercel
+          # touch build/.vercel/project.json
+          # echo '{ "orgId": "${{ secrets.VERCEL_ORG_ID }}", "projectId": "${{ secrets.VERCEL_PROJECT_ID }}" }' > build/.vercel/project.json
           
-          # Deploy to vercel
-          vercel deploy build -t ${{ secrets.VERCEL_TOKEN }} --prod -y
+          # # Deploy to vercel
+          # vercel deploy build -t ${{ secrets.VERCEL_TOKEN }} --prod -y

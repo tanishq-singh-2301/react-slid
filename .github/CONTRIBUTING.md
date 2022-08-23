@@ -1,18 +1,18 @@
-# Contributing to react-component-library-ts
+# Contributing to react-slid
 
 Hello, thank you for your interest in helping!
 
 ## Submit a new bug report
 
-Please create a [new issue](https://github.com/tanishq-singh-2301/react-component-library-ts/issues/new) containing the steps to reproduce the problem.
+Please create a [new issue](https://github.com/tanishq-singh-2301/react-slid/issues/new) containing the steps to reproduce the problem.
 
-If you're having installation problems, please include the output of running `npm install --verbose react-component-library-ts`.
+If you're having installation problems, please include the output of running `npm install --verbose react-slid`.
 
 New bugs are assigned a `triage` label whilst under investigation.
 
 ## Submit a new feature request
 
-If a [similar request](https://github.com/tanishq-singh-2301/react-component-library-ts/labels/enhancement) exists,
+If a [similar request](https://github.com/tanishq-singh-2301/react-slid/labels/enhancement) exists,
 it's probably fastest to add a comment to it about your requirement.
 
 ## Submit a Pull Request to fix a bug
@@ -25,9 +25,9 @@ Please squash your changes into a single commit using a command like `git rebase
 
 ## Submit a Pull Request with a new feature
 
-Please add JavaScript [unit tests](https://github.com/tanishq-singh-2301/react-component-library-ts/tree/main/test) to cover your new feature.
+Please add JavaScript [unit tests](https://github.com/tanishq-singh-2301/react-slid/tree/main/test) to cover your new feature.
 
-You deserve to add your details to the [list of contributors](https://github.com/tanishq-singh-2301/react-component-library-ts/blob/main/package.json#L6).
+You deserve to add your details to the [list of contributors](https://github.com/tanishq-singh-2301/react-slid/blob/main/package.json#L6).
 
 Any change that modifies the existing public API should be added to the relevant work-in-progress branch for inclusion in the next major release.
 
@@ -36,7 +36,7 @@ Please squash your changes into a single commit using a command like `git rebase
 ### Add a new public method
 
 The API tries to be as fluent as possible.
-Feel free to create a [new issue](https://github.com/tanishq-singh-2301/react-component-library-ts/issues/new) to gather feedback on a potential API change.
+Feel free to create a [new issue](https://github.com/tanishq-singh-2301/react-slid/issues/new) to gather feedback on a potential API change.
 
 ### Remove an existing public method
 
@@ -55,7 +55,7 @@ npm run test
 ## Finally
 
 Please feel free to ask any questions via a
-[new issue](https://github.com/tanishq-singh-2301/react-component-library-ts/issues/new).
+[new issue](https://github.com/tanishq-singh-2301/react-slid/issues/new).
 
 If you're unable to post details publicly, please
-[e-mail](https://github.com/tanishq-singh-2301/react-component-library-ts/blob/main/package.json#L5)
+[e-mail](https://github.com/tanishq-singh-2301/react-slid/blob/main/package.json#L5)
