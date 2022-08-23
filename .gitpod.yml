@@ -1,11 +1,7 @@
 tasks:
-  - name: Package
-    init: yarn install && yarn link
-    command: yarn watch
-
-  - name: Web App
-    init: cd example && yarn link react-slid
-    command: cd example && yarn start
+  - name: React-Slid
+    init: yarn install
+    command: yarn dev
 
 ports:
   - name: Web App

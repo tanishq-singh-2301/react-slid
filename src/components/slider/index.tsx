@@ -63,9 +63,9 @@ export const Slider = ({ className, onChange, value, onHoverFat }: SliderProps) 
     return (
         <div className={`h-4 w-full flex justify-center items-center relative bg-transparent ${className}`}>
             <div className="h-4 w-full flex justify-center items-center absolute cursor-pointer z-20" ref={slider}>
-                <div className="w-full flex justify-start items-center bg-[#ffffff4d] relative duration-150" style={{ height: hover && (onHoverFat ?? true) ? '.625rem' : '.25rem' }}>
+                <div className="w-full flex justify-start items-center bg-[#ffffff4d] relative duration-150 rounded-full" style={{ height: hover && (onHoverFat ?? true) ? '.625rem' : '.25rem' }}>
                     <div
-                        className={classNames('h-full', hover ? 'bg-[#1db954]' : 'bg-white')}
+                        className={classNames('h-full', hover ? 'bg-[#1db954]' : 'bg-white', "rounded-l-full")}
                         style={{
                             width: `${(value ?? 0) * 100}%`,
                             transitionDuration: sliding ? '50ms' : '300ms'
@@ -76,7 +76,7 @@ export const Slider = ({ className, onChange, value, onHoverFat }: SliderProps) 
                         className="rounded-full bg-white absolute top-1/2 -translate-y-1/2 -translate-x-1/2"
                         style={{
                             opacity: hover ? 100 : 0,
-                            left: `${(value ?? 0) * 100}%`,
+                            left: `${Math.min((value ?? 0) * 100, 100)}%`,
                             transitionDuration: sliding ? '50ms' : '150ms',
                             height: hover ? (onHoverFat ?? true ? '1rem' : '.6rem') : '.25rem',
                             width: hover ? (onHoverFat ?? true ? '1rem' : '.6rem') : '.25rem'
