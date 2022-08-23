@@ -6,7 +6,6 @@
     "dependencies": {
         "react": "link:../node_modules/react",
         "react-dom": "link:../node_modules/react-dom",
-        "react-slid": "link:..",
         "react-router-dom": "link:../node_modules/react-router-dom"
     },
     "scripts": {
