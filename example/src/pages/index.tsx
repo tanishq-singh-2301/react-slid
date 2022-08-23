@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Slider } from 'react-slid';
 
 export const Home = () => {
-    const [state, setState] = useState<number>(0);
+    const [state, setState] = useState<number>(0.2);
 
     return (
         <div className="h-full w-full">
