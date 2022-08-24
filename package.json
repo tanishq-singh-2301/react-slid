@@ -1,7 +1,7 @@
 {
     "name": "react-slid",
-    "version": "1.0.4",
-    "description": "A component library for getting started with easy to re-use components for everyday projects.",
+    "version": "1.0.5",
+    "description": "A component library for range input in your application, works with any device on any browser",
     "author": "Tanishq Singh <tanishqsingh640@gmail.com>",
     "contributors": [],
     "repository": "https://github.com/tanishq-singh-2301/react-slid.git",

@@ -65,7 +65,7 @@ export const Slider = ({ className, onChange, value, onHoverFat }: SliderProps) 
             <div className="h-4 w-full flex justify-center items-center absolute cursor-pointer z-20" ref={slider}>
                 <div className="w-full flex justify-start items-center bg-[#ffffff4d] relative duration-150 rounded-full" style={{ height: hover && (onHoverFat ?? true) ? '.625rem' : '.25rem' }}>
                     <div
-                        className={classNames('h-full', hover ? 'bg-[#1db954]' : 'bg-white', "rounded-l-full")}
+                        className={classNames('h-full', hover ? 'bg-[#1db954]' : 'bg-white', 'rounded-l-full')}
                         style={{
                             width: `${(value ?? 0) * 100}%`,
                             transitionDuration: sliding ? '50ms' : '300ms'

@@ -8,6 +8,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== "production";
+const tailwindcss = require("tailwindcss");
 
 module.exports = {
     mode: isDevelopment ? 'development' : 'production',
@@ -78,8 +79,8 @@ module.exports = {
                             sourceMap: isDevelopment,
                             postcssOptions: {
                                 plugins: [
-                                    require("tailwindcss"),
-                                    // require('autoprefixer'),
+                                    tailwindcss("./web/tailwind.config.js"),
+                                    require('autoprefixer'),
                                     // add addtional postcss plugins here
                                     // easily find plugins at https://www.postcss.parts/
                                 ]
