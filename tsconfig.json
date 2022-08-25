@@ -11,7 +11,7 @@
         "noImplicitAny": true,
         "noUnusedLocals": true,
         "outDir": "build/lib/esm",
-        "sourceMap": true,
+        "sourceMap": false,
         "strict": true,
         "target": "es6"
     },
